@@ -2,7 +2,7 @@ import time
 import random
 
 while True:
-    file = open("microservice.txt", "r")
+    file = open("sumService.txt", "r")
     r = file.read()
     file.close()
 
@@ -19,7 +19,7 @@ while True:
         for i in range(mult):
             total += (random.randint(1, rng))
 
-        file = open("microservice.txt", "w")
+        file = open("sumService.txt", "w")
         file.write(str(total))
         file.close()
 
