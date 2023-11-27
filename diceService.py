@@ -1,4 +1,5 @@
 import random
+import time
 
 def read_request():
     file = open("diceService.txt", "r")
@@ -30,6 +31,7 @@ def write_sum(total):
 
 def main():
     while True:
+        time.sleep(1)
         r = read_request()
         if "," in r:
             total = dice_roll(r)
